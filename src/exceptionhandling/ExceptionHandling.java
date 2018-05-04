@@ -3,16 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package calculator;
+package exceptionhandling;
 
 /**
  *
  * @author Producer
  */
-public class Multiply {
-    public int times(int c, int d)
-	{
-		return c * d;
-	}
+public class ExceptionHandling {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }

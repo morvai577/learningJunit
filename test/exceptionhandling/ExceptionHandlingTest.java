@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package calculator;
+package exceptionhandling;
 
+import java.util.ArrayList;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
  * @author Producer
  */
-public class SumTest {
+public class ExceptionHandlingTest {
     
-    public SumTest() {
+    public ExceptionHandlingTest() {
     }
     
     @BeforeClass
@@ -28,17 +28,17 @@ public class SumTest {
     }
 
     /**
-     * Test of summation method, of class Sum.
+     * Test of main method, of class ExceptionHandling.
      */
     @Test
-    public void testSummation() {
-        System.out.println("summation");
-        int[] nums = {1,2,3,4,5};
-        Sum instance = new Sum();
-        int expResult = 15;
-        int result = instance.summation(nums);
-        assertEquals(expResult, result);
-  
+    public void testMain() {
+     new ArrayList<Object>().get(0); 
     }
-    
+
+    @Test
+    public void testDivideByZero()
+    {
+        int x = 10/0;
+    }
 }
+
